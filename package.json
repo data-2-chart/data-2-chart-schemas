@@ -1,0 +1,52 @@
+{
+  "name": "@data-2-chart/data-2-chart-schemas",
+  "private": false,
+  "version": "0.0.2",
+  "description": "data-2-chart-schemas",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && rollup -c",
+    "clean": "rimraf lib",
+    "npm-publish": "npm publish --access public",
+    "lint": "eslint 'src/**/*.ts'",
+    "ncu": "npx npm-check-updates",
+    "ncu:update": "npx npm-check-updates -u && npm install",
+    "release": "npm run lint && npm run build && npm run npm-publish"
+  },
+  "keywords": [
+    "web-components",
+    "charts",
+    "graphs",
+    "typescript",
+    "visualization",
+    "data visualization",
+    "information visualization",
+    "Data and information visualization"
+  ],
+  "author": "Sathya Vikram Chekuri",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "rollup": "^2.75.7",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "eslint": "^8.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/data-2-chart/data-2-chart-schemas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/data-2-chart/data-2-chart-schemas/issues"
+  },
+  "homepage": "https://github.com/data-2-chart/data-2-chart-schemas#readme",
+  "files": [
+    "lib"
+  ]
+}
