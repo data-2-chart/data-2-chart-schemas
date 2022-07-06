@@ -10,4 +10,12 @@ export default [{
     preserveModulesRoot: 'src'
   }],
   plugins: [typescript()]
+}, {
+  input: 'src/index.ts',
+  output: [{
+    sourcemap: true,
+    file: './lib/index.cjs.js',
+    format: 'cjs'
+  }],
+  plugins: [typescript()]
 }];

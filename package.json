@@ -1,9 +1,9 @@
 {
   "name": "@data-2-chart/data-2-chart-schemas",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "data-2-chart-schemas",
-  "main": "lib/index.js",
+  "main": "lib/index.cjs.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
